@@ -14,6 +14,11 @@ Flask-WTF = "==0.14.2"
 Flask-Cors = "==2.1.0"
 Lin-CMS = "==0.1.1b1"
 jupyter = "*"
+pandas = "*"
+xlrd = "*"
+numpy = "*"
+pillow = "*"
+pymysql = "*"
 
 [dev-packages]
 pytest = "*"
