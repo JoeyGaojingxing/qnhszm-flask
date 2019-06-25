@@ -4,7 +4,7 @@
 """
 
 # 安全性配置
-SQLALCHEMY_DATABASE_URI = 'mysql+cymysql://root:123456@localhost:3306/lin-cms'
+SQLALCHEMY_DATABASE_URI = 'mysql+cymysql://root:MiMa12345!@mojerrodb.finelyteam.com:3306/qnhszm'
 
 SQLALCHEMY_ECHO = False
 

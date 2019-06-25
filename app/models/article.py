@@ -4,19 +4,24 @@
 """
 from lin.exception import NotFound
 from lin.interface import InfoCrud as Base
-from sqlalchemy import Column, String, Integer, Text
+from sqlalchemy import Column, String, Integer, Text, BigInteger
 
 
 class Article(Base):
-    id = Column(Integer, primary_key=True, autoincrement=True)
-    prize = Column(String(15), nullable=False)
-    logo = Column(String(255))
-    pic = Column(String(1000))
-    name = Column(String(255))
-    province = Column(String(63))
-    school = Column(String(255))
-    intro = Column(String(512))
-    introduce = Column(Text)
+    id = Column(BigInteger, primary_key=True, autoincrement=True, default=None)
+    index = Column(BigInteger, default=None)
+    prize = Column(Text)
+    logo = Column(Text)
+    img1 = Column(Text)
+    img2 = Column(Text)
+    img3 = Column(Text)
+    img4 = Column(Text)
+    img5 = Column(Text)
+    title = Column(Text)
+    province = Column(Text)
+    college = Column(Text)
+    brief_intro = Column(Text)
+    intro = Column(Text)
 
     @classmethod
     def get_all(cls):
