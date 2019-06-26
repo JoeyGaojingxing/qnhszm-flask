@@ -24,8 +24,8 @@ class Article(Base):
     intro = Column(Text)
 
     @classmethod
-    def get_all(cls):
-        res = cls.query.all()
+    def get_all(cls, start, count):
+        res = cls.query.offset(start).limit(count).all()
         if res is None:
             return NotFound(msg="没有项目")
         return res

@@ -6,7 +6,7 @@
 from datetime import timedelta
 
 # 分页配置
-COUNT_DEFAULT = 10
+COUNT_DEFAULT = 18
 PAGE_DEFAULT = 0
 
 # 令牌配置
